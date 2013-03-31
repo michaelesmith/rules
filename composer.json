@@ -1,0 +1,26 @@
+{
+    "name": "michaelesmith/rules",
+    "version": "0.1",
+    "description": "Creates a basic rules engine",
+    "keywords": ["rules"],
+    "homepage": "http://michaelsmithonline.blogspot.com/p/rules.html",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Michael Smith",
+            "email": "sitecross@gmail.com",
+            "homepage": "http://michaelsmithonline.blogspot.com/"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/michaelesmith/msRules/issues"
+    },
+    "require": {
+        "php": ">=5.3.3"
+    },
+    "autoload": {
+        "psr-0": { "MS\\Rules": "src/" }
+    },
+    "minimum-stability": "beta"
+}
