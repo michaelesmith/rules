@@ -19,9 +19,17 @@ class CriteriaSet {
 
     protected $modes = array(self::MATCHES_ALL, self::MATCHES_ANY, self::MATCHES_UNLESS_ALL, self::MATCHES_UNLESS_ANY);
 
+    public function __construct(array $criteria = array(), $mode = self::MATCHES_ALL)
+    {
+        $this->criteria = $criteria;
+        $this->setMode($mode);
+    }
+
     public function add(CriteriaInterface $criteria)
     {
         $this->criteria[] = $criteria;
+
+        return $this;
     }
 
     public function getCriteria()

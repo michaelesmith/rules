@@ -12,6 +12,8 @@ class RuleSet
     public function add(Rule $rule)
     {
         $this->rules[] = $rule;
+
+        return $this;
     }
 
     public function process(RuleContextInterface $context)
