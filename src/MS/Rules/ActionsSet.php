@@ -10,6 +10,11 @@ namespace MS\Rules;
 class ActionsSet {
     protected $actions = array();
 
+    public function __construct(array $actions = array())
+    {
+        $this->actions = $actions;
+    }
+
     public function add(ActionInterface $action)
     {
         $this->actions[] = $action;

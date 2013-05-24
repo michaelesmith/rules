@@ -14,10 +14,10 @@ class Rule {
 
     protected $propagate = true;
 
-    function __construct()
+    public function __construct($criteriaSet = null, $actionSet = null)
     {
-        $this->criteria = new CriteriaSet();
-        $this->actions = new ActionsSet();
+        $this->criteria = $criteriaSet ?: new CriteriaSet();
+        $this->actions = $actionSet ?: new ActionsSet();
     }
 
     public function getActionsSet()
