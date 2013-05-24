@@ -18,6 +18,8 @@ class ActionsSet {
     public function add(ActionInterface $action)
     {
         $this->actions[] = $action;
+
+        return $this;
     }
 
     public function getActions()
