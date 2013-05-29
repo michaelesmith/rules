@@ -27,4 +27,9 @@ class RuleSet
         }
     }
 
+    public function getRules()
+    {
+        return $this->rules;
+    }
+
 }
